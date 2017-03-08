@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FullPage Plugin Demo</title>
+	<link rel="stylesheet" type="text/css" href="./src/jquery.fullpage.css">
+	<script type="text/javascript" src="./lib/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="./src/jquery.fullpage.js"></script>
+
+	<style type="text/css">
+		.section {
+			background-color: #fff;
+			background-size: cover;
+			position: relative;
+		}
+		#section-1 {
+			background: url('./resource/image/1.jpg');
+		}
+		#section-2 {
+			background: url('./resource/image/2.jpg');
+		}
+		#section-3 {
+			background: url('./resource/image/3.jpg');
+		}
+		#section-4 {
+			background: url('./resource/image/4.jpg');
+		}
+
+		.section h1 {
+			color: white;
+			font-size: 48px;
+			height: 20px;
+			width: 500px;
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+			left: 50%;
+			margin-left: -200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sections">
+			<div class="section" id="section-1">
+				<h1>Hello Section ONE</h1>
+			</div>
+			<div class="section" id="section-2">
+				<h1>Hello Section TWO</h1>
+			</div>
+			<div class="section" id="section-3">
+				<h1>Hello Section THREE</h1>
+			</div>
+			<div class="section" id="section-4">
+				<h1>Hello Section FOUR</h1>
+			</div>
+		</div>
+	</div>
+	<!-- 调用全屏切换插件 -->
+	<script type="text/javascript">
+		$('.container').FullPage({
+			
+		});
+	</script>
+</body>
+</html>

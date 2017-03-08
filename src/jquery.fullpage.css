@@ -1,0 +1,14 @@
+/* fullpage CSS File */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.container, .sections, .section {
+	height: 100%;
+}
